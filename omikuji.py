@@ -2,9 +2,12 @@ from random import random
 from xml.dom import INDEX_SIZE_ERR
 
 
-omikuji = ["大吉", "吉", "凶"]
+import random
 
-result = omikuji[0]
+omikuji = ["大吉", "吉", "中吉","凶"]
 
-print(f"今日の運勢は・・・{result}")
+index = random.randint(0, len(omikuji) - 1)
 
+result = omikuji[index]
+
+print(f"今日の運勢は...{result}")
